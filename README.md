@@ -1,4 +1,4 @@
 # DBSGen
-This is a draft version of DBSGen method, which performs Dynamic Background Subtraction by Generative Neural Networks.
-DBSGen was implemented and executed in Tensorflow V1. The code was modified to be compatible with Tensorflow 2. 
-However, Tensorflow eager execution cannot be used in the current version of the code. It will be updated and comments will be added.
+This is a Tensorflow implementation of the DBSGen method.
+
+Background subtraction is a significant task in computer vision and an essential step for many real world applications. One of the challenges for background subtraction methods is dynamic background, which constitutes stochastic movements in some parts of the background. In this paper, we have proposed a new background subtraction method, called DBSGen, which uses two generative neural networks, one for dynamic motion removal and another for background generation. At the end, the foreground moving objects are obtained by a pixel-wise distance threshold based on a dynamic entropy map. DBSGen is an end-to-end, unsupervised optimization method with a near real-time frame rate. The performance of the method is evaluated over dynamic background sequences and it outperforms most of state-of-the-art unsupervised methods.
